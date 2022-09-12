@@ -27,13 +27,13 @@
             paragraph tag p: this tag indicaes the content to be a paragraph
         -->
 
-        <h1> basic html tags </h1>
+        <h1> Basic html tags </h1>
         <h3> Paragraph tag </h3>
-        <p> this page demonstrates the basic structure of an html web page. the head area has
-            the browse title tab specified as well as the charset defined. the body is demonstrating
+        <p> This page demonstrates the basic structure of an html web page. The head area has
+            the browse title tab specified as well as the charset defined. The body is demonstrating
             the h1 header tag and the paragraph tag.
         </p>
-        <p> this is another paragraph </p>
+        <p> This is another paragraph </p>
         <!--
             if you wish to use a component of a reserved tag (or the whole tag)
             you would be in trouble using the tag. instead: you can use special
@@ -81,7 +81,51 @@
                 _blank will open a new browser tab (page)
     -->
     <a href="https://www.nait.ca" target="_blank"> go to NAIT </a>
-        
+
+    <h3> Image tag </h3>
+    <!-- an empty tag (void) tag
+        image tag does not have a closing tag
+        the image tag has no content, however it does have parameters 
     
+        parameters
+        src="relative web site location"
+        alt="printable text if the image is not found at src"
+        [title="tool tip text for the image"]
+
+        Absolute Addressing is a complete fixed file path
+            drive:/folder/.../folder/filename.ext
+
+        Relative address begins at a specific point
+        for websites, it is the "top if the website"
+        reference to the desired filname is done by specifying the appropriate folder path
+            to the desired file
+        NO DRIVE
+
+        Movement with a relative address
+        - if only the file name is given, the location is within the same folder
+        - movement down the file structure is by /foldername
+        - movement up the file structure is by using .. for each folder level to ascend
+
+        Same folder 
+            ="filename.ext"
+
+        Lower folder
+            ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+
+        From one lower folder to another lower folder on a different branch
+        .. for each level that needs to be ascended
+            ="../../../nextleveldownfoldername/filename.ext"
+        -->
+
+        <img src="img/photoshop.png" alt="logo photoshop"
+        title="A logo image of Photoshop">
+
+        <!--
+            Combine the anchor tag and the image tag as the anchor tag content
+        -->
+        <a href="https://www.adobe.com" target="_blank">
+            <img src="img/photoshop.png" alt="logo photoshop"
+            title="A logo image of Photoshop" style="width:80px; height:80px">
+        </a>
     </body>
 </html>
