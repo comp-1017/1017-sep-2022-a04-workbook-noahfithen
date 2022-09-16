@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Table Demo </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Noah Fithen">
+    </head>
+    <body>
+        <h1> Table Demo </h1>
+        <p>
+        Looking for the Best Canadian Web Hosting? We’ve reviewed the top Canadian web hosts and below you’ll find coupons and discounts for the Top Canadian Hosting providers.
+        More and more Canadians are looking for their website to be hosted in Canada to benefit from search engine rankings and to ensure their privacy is protected by Canadian laws.
+        If you’re a Canadian business looking for a suitable hosting provider then take a look at our list below of Canadian web hosts.
+        </p>
+
+        <!-- The borders="1" will add a default border around the table and each cell-->
+        <table border="1">
+            <thead>
+                <!-- The thead will indicate a line for column headers. The cell tag for this line will be <th>. The contents of the cell will be bolded by default
+                    
+                Optionally: one can have their head titles on their rows. Here the developer uses the 1st column (general) as the titles for the data.
+                If you are designing your table in this fashion then a thead area is not needed and the 1st cell on your tbody row will be a <th> cell.
+                
+                -->
+                <tr>
+                <th> Host Name </th>
+                <th> Bandwidth </th>
+                <th> Price </th>
+                <th> Money Back </th>
+                <th> Coupon </th>
+                <th> Rating </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- The tbody contains the data for the table. Each row represents a single row of table data. Think of a grid system (tabular).
+                The text will not have any styling on default .
+                See above for using <th> cell if you wish your headings to appear on the row instead of the column top.
+                    
+                By defauly, you are expected to have one <td> cell for each <th> cell.
+                    
+                <td> cells are grouped under a <tr> set of tags. <tr> is a table row. <td> is a data cell.
+                    
+                -->
+                <tr>
+                    <td> HostUpon</td>
+                    <td> Unlimited </td>
+                    <td>$3.69/mo </td>
+                    <td> 30 days </td>
+                    <td> 15% off </td>
+                    <td> 5 </td>
+                </tr>
+                <tr>
+                    <td> BlueHost </td>
+                    <td> Unlimited </td>
+                    <td> $6.99/mo </td>
+                    <td> anytime </td>
+                    <td> $3.95/mo* </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> HostGator </td>
+                    <td> Unlimited </td>
+                    <td> $3.71/mo </td>
+                    <td> 45 days </td>
+                    <td> 20% </td>
+                    <td> 4 </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- The tfoot section is generally used for totals, special messages, comments.
+                    Data cells <td> can be merged. A set of merged <td> has a parameter call colspan="n"
+                    where "n" is the number of data cells to merge into one. A table row should not have a set of merged cells
+                    greater than the number of columns on the table
+
+                -->
+                <tr>
+                    <td colspan="6">
+                        * limited to 3 months of service
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>
+                        row title
+
+                    </th>
+                    <td>
+                        <img src="img/phone.png" alt="phone png"
+                        title="some tool tip">
+                    </td>
+                    <td>
+                        This is the phone line
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        row title
+
+                    </th>
+                    <td>
+                        <img src="img/money.png" alt="money png"
+                        title="some tool tip">
+                    </td>
+                    <td>
+                        This is the lotto max payout
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        row title
+
+                    </th>
+                    <td>
+                        <img src="img/server.png" alt="server png"
+                        title="some tool tip">
+                    </td>
+                    <td>
+                        At your service
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
