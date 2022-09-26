@@ -26,21 +26,35 @@
 
             paragraph tag p: this tag indicaes the content to be a paragraph
         -->
+        <header>
+            <h1> Basic html tags </h1>
+            <nav>
+                <h2>Nav tag titles are optional</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../semantic-tags.html">Semantics</a></li>
+                    <li><a href="#">Html Basics</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <h1> Basic html tags </h1>
-        <h3> Paragraph tag </h3>
+        <main>
+            <section>
+        <h2> Paragraph tag </h2>
         <p> This page demonstrates the basic structure of an html web page. The head area has
             the browse title tab specified as well as the charset defined. The body is demonstrating
             the h1 header tag and the paragraph tag.
         </p>
         <p> This is another paragraph </p>
+    </section>
         <!--
             if you wish to use a component of a reserved tag (or the whole tag)
             you would be in trouble using the tag. instead: you can use special
             character strings to represent components of the tag such as the < (&lt;)
             and the > (&gt;) symbols
         -->
-        <h3> List tags: &lt;ol&gt; and &lt;ul&gt;</h3>
+        <section>
+        <h2> List tags: &lt;ol&gt; and &lt;ul&gt;</h2>
         <!--
             block tag , paired
             create an ordered list (numbered) using <ol>
@@ -66,8 +80,9 @@
         <li> Default display is a bulleted list </li>
         <li> We will see later how to remove these bullets using css styling </li>
     </ul>
-
-    <h3> Anchor tag (a.k.a. linking to another page) </h3>
+    </section>
+    <section>
+    <h2> Anchor tag (a.k.a. linking to another page) </h2>
     <!-- blocked paired
         This is an anchor tag and is incorrectly often referred to as the link tag
         One should NOT use the link tag because there is actually a <link> used in the <head> section
@@ -81,8 +96,9 @@
                 _blank will open a new browser tab (page)
     -->
     <a href="https://www.nait.ca" target="_blank"> go to NAIT </a>
-
-    <h3> Image tag </h3>
+    </section>
+    <section>
+    <h2> Image tag </h2>
     <!-- an empty tag (void) tag
         image tag does not have a closing tag
         the image tag has no content, however it does have parameters 
@@ -117,15 +133,17 @@
             ="../../../nextleveldownfoldername/filename.ext"
         -->
 
-        <img src="img/photoshop.png" alt="logo photoshop"
+        <img src="../img/photoshop.png" alt="logo photoshop"
         title="A logo image of Photoshop">
 
         <!--
             Combine the anchor tag and the image tag as the anchor tag content
         -->
         <a href="https://www.adobe.com" target="_blank">
-            <img src="img/photoshop.png" alt="logo photoshop"
+            <img src="../img/photoshop.png" alt="logo photoshop"
             title="A logo image of Photoshop" style="width:80px; height:80px">
         </a>
+    </section>
+    </main>
     </body>
 </html>
