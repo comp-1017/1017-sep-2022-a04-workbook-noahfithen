@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noah Fithen">
+    <title>Contact James Shoes</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="contact-us">
+            <nav class="site-navigation">
+                <h2 class="hidden">Site Navigation</h2>
+                <img src="img/the-james-shoes-logo.png" alt="the james mens shoes company logo">
+                <ul class="clearfix">
+                    <li><a href="#">loafers</a></li>
+                    <li><a href="#">dress boots</a></li>
+                    <li><a href="#">casual</a></li>
+                    <li><a href="#">work boots</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us</h1>
+        </header>
+        <main>
+            <form>
+                <div class="setflex">
+                    <div class="onehalf">
+
+                        <fieldset>
+                        <legend><h2>Left Column</h2></legend>
+                        <div class="your-name">
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" placeholder="enter name">   
+                        </div>
+                        <div class="email-address">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="email" placeholder="enter email">   
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="phone" placeholder="enter phone number">   
+                        </div>
+                        <div class="comment-message">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" cols="150" placeholder="comment area"></textarea>
+                        </div>
+                            
+                        </fieldset>
+                    </div>
+               
+                    <div class="onehalf">
+                        <fieldset>
+                            <legend><h2>Right Column</h2></legend>
+                            <div class="phone-number">
+                                <label for="duedate">Due Date</label>
+                                <input id="duedate" name="duedate" type="date">   
+                            </div>
+                            <div>
+                                <label for="iaccept">Terms</label>
+                                <input id="iaccept" name="iaccept" type="checkbox">I accept the terms   
+                            </div>
+                            <div>
+                                <label for="mymeals">Meal</label>
+                                <input id="mymeals" name="mymeals" type="radio">Breakfast
+                                <input id="mymeals" name="mymeals" type="radio">Lunch
+                                <input id="mymeals" name="mymeals" type="radio">Dinner
+                            </div>
+                            <div>
+                                <label for="mygames">Choose your gaming platform</label>
+                                <select id="mygames" style="width: 250px">
+                                    <option value="0">select...</option>
+                                    <option value="1">Phone</option>
+                                    <option value="2">Playstation</option>
+                                    <option value="3">Switch</option>
+                                    <option value="4">Wii</option>
+                                    <option value="2">Xbox</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </main>
+	</div>
+</body>
+
+</html>
